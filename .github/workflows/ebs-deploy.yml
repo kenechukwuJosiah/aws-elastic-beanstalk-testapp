@@ -25,6 +25,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: appxy
           environment_name: Appxy-env
-          version_label: $GITHUB_RUN_NUMBER
+          version_label: echo $GITHUB_RUN_NUMBER
           region: us-east-1
           deployment_package: deploy.zip
