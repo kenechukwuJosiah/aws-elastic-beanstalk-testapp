@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  Build_And_Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
@@ -20,8 +20,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: nodelyapp
-          environment_name: Nodelyapp-env-1
+          application_name: appxy
+          environment_name: Appxy-env
           version_label: "$GITHUB_RUN_NUMBER"
           region: us-east-1
           deployment_package: deploy.zip
