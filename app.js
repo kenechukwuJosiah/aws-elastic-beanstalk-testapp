@@ -28,7 +28,7 @@ app.use("/portalapi/v1/token", TokenRouter);
 app.use("/portalapi/v1/api", MainRouter);
 app.get("/health_check", (req, res) => res.status(200).send("Ok"));
 app.get("/", (req, res) => {
-  return res.status(200).json({ message: "We're live!!!!!" });
+  return res.status(200).json({ message: "Hello EBS !!!!" });
 });
 
 // app.use("*", (req, res, next) => {
